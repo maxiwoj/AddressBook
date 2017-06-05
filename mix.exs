@@ -3,7 +3,7 @@ defmodule AddressBook.Mixfile do
 
   def project do
     [app: :address_book,
-     version: "0.1.0",
+     version: "0.1.1",
      elixir: "~> 1.4",
      description: description(),
      package: package(),
@@ -20,17 +20,8 @@ defmodule AddressBook.Mixfile do
     [extra_applications: [:logger]]
   end
 
-  # Dependencies can be Hex packages:
-  #
-  #   {:my_dep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:my_dep, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
-  #
-  # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:ex_doc, ">= 0.0.0", only: :dev}]
   end
   
   defp description() do
@@ -38,14 +29,14 @@ defmodule AddressBook.Mixfile do
     Simple package for managing address book.
     """
   end
-  defp package: package() do
+
+  defp package() do
     [
       name: :addressBook,
-      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Maksymilian Wojczuk"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/maxiwoj/AddressBook"}
     ]
-  end
   end
 end
