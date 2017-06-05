@@ -42,9 +42,9 @@ defmodule AddressBook.Mixfile do
     [
       name: :addressBook,
       files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
-      maintainers: ["Eric Meadows-Jönsson", "José Valim"],
+      maintainers: ["Maksymilian Wojczuk"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/elixir-ecto/postgrex"}
+      links: %{"GitHub" => "https://github.com/maxiwoj/AddressBook"}
     ]
   end
   end
